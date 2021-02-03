@@ -1,6 +1,6 @@
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
-import encryptLib from '../modules/encryption';
+import * as encryptLib from '../modules/encryption';
 import pool from '../modules/pool';
 
 passport.serializeUser((user: any, done: any): void => {
