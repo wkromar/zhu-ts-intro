@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import { rejectUnauthenticated } from '../modules/authentication-middleware';
-import encryptLib from '../modules/encryption';
+import * as encryptLib from '../modules/encryption';
 import pool from '../modules/pool';
 import userStrategy from '../strategies/user.strategy';
 
