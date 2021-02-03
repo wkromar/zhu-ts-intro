@@ -2,8 +2,9 @@
 .DS_Store
 .DS_STORE/
 
-# Build directories for Front-End Assets
+# Build directories for Front-End Assets and Server Compiled code
 build/
+dist/
 
 # Logs
 logs
