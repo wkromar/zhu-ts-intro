@@ -64,4 +64,4 @@ passport.use(
   )
 );
 
-module.exports = passport;
+export default passport;
