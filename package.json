@@ -4,14 +4,6 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
-    "@types/bcrypt": "^3.0.0",
-    "@types/body-parser": "^1.19.0",
-    "@types/cookie-session": "^2.0.42",
-    "@types/express": "^4.17.11",
-    "@types/node": "^14.14.22",
-    "@types/passport": "^1.0.5",
-    "@types/passport-local": "^1.0.33",
-    "@types/pg": "^7.14.9",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "cookie-session": "^2.0.0-rc.1",
@@ -45,6 +37,14 @@
     "tsc": "tsc -p tsconfig.node.json"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/body-parser": "^1.19.0",
+    "@types/cookie-session": "^2.0.42",
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.22",
+    "@types/passport": "^1.0.5",
+    "@types/passport-local": "^1.0.33",
+    "@types/pg": "^7.14.9",
     "nodemon": "^2.0.4",
     "ts-node": "^9.1.1"
   },
