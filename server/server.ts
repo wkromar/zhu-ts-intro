@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const app = express();
+const app: any = express();
 
 const sessionMiddleware = require('./modules/session-middleware');
 const passport = require('./strategies/user.strategy');
@@ -28,9 +28,9 @@ app.use('/api/user', userRouter);
 app.use(express.static('build'));
 
 // App Set //
-const PORT = process.env.PORT || 5000;
+const PORT: string | number = process.env.PORT || 5000;
 
 /** Listen * */
-app.listen(PORT, () => {
+app.listen(PORT, (): void => {
   console.log(`Listening on port: ${PORT}`);
 });
