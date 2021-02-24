@@ -4,6 +4,7 @@ import sessionMiddleware from './modules/session-middleware';
 import passport from './strategies/user.strategy';
 // Route includes
 import userRouter from './routes/user.router';
+import bookRouter from './routes/book.router';
 
 require('dotenv').config();
 
@@ -22,6 +23,8 @@ app.use(passport.session());
 
 /* Routes */
 app.use('/api/user', userRouter);
+app.use('/api/book', bookRouter);
+
 
 // Serve static files
 app.use(express.static('build'));
