@@ -1,9 +1,10 @@
 import express, { Request, Response } from 'express';
 import BookService from '../services/BookService';
+import pool from '../modules/pool'
 
 const router: express.Router = express.Router();
 
-const BookServiceInstance : BookService = new BookService();
+const BookServiceInstance : BookService = new BookService(pool);
 
 router.get('/', async (req: Request, res: Response) : Promise<void>  => {
     try {
