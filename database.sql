@@ -8,3 +8,9 @@ CREATE TABLE "user" (
     "username" VARCHAR (80) UNIQUE NOT NULL,
     "password" VARCHAR (1000) NOT NULL
 );
+
+CREATE TABLE "book" (
+    "id" SERIAL PRIMARY KEY,
+    "author" VARCHAR NOT NULL,
+    "title" VARCHAR NOT NULL
+)
